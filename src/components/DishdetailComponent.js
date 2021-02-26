@@ -148,20 +148,23 @@ class CommentForm extends Component {
                             <Row className="form-group">
                                 <Label htmlFor="rating" md={2}>Rating</Label>
                                 <Col md={10}>
-                                    <Control.select model=".rating" name="Rating"
-                                        className="form-control">
+                                    
+                                {// eslint-disable-next-line
+                                            }<Control.select  model=".rating" name="Rating"
+                                        className="form-control" > 
                                         <option>1</option>
                                         <option>2</option>
                                         <option>3</option>
                                         <option>4</option>
                                         <option>5</option>
-                                    </Control.select>
+                                    </Control.select>   
                                 </Col>
                             </Row>
                             <Row className="form-group">
                                 <Label htmlFor="author" md={2}>Your Name</Label>
                                 <Col md={10}>
-                                    <Control.text model=".author" id="author" name="author"
+                                    {// eslint-disable-next-line
+                                            }<Control.text model=".author" id="author" name="author"
                                         placeholder="Your Name"
                                         className="form-control"
                                         validators={{
@@ -183,7 +186,8 @@ class CommentForm extends Component {
                             <Row className="form-group">
                                 <Label htmlFor="Comment" md={2}>Comment</Label>
                                 <Col md={10}>
-                                    <Control.textarea model=".Comment" id="Comment" name="Comment"
+                                    {// eslint-disable-next-line
+                                            }<Control.textarea model=".Comment" id="Comment" name="Comment"
                                         rows="6"
                                         className="form-control" />
                                 </Col>
@@ -196,6 +200,7 @@ class CommentForm extends Component {
                                 </Col>
                             </Row>
                         </LocalForm>
+                    
                     </ModalBody>
                 </Modal>
             </React.Fragment>
